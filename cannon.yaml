@@ -1,0 +1,8 @@
+config:
+  target: "http://shopping.service.staging"
+  # 60초 동안 1초에 5개씩 발싸ㅏㅏㅏㅏ!!
+  # command : artillery run [options] <script>
+  phases:
+    - duration: 60
+      arrivalRate: 5
+      name: Warm up
